@@ -1,0 +1,59 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>ysUf2hwq9bdsreK-gt-1898257-2024-10-21T17:14:49.391Z::conn.xml</types1:EntryId>
+      <types1:Name>kk-salesforce</types1:Name>
+      <types1:ParentFlowIds>YtjCtbdsreK8ZAZ-gt-1945129-2024-10-21T17:26:34.808Z::pd.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+connection</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>SA_USE4_1</types1:CreatedBy>
+      <types1:CreationDate>2024-10-21T17:14:49Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>SA_USE4_1</types1:PublishedBy>
+      <types1:PublicationDate>2024-10-21T17:16:58Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/rt.connection/kk-salesforce/kk-salesforce.conn.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <connection xmlns="http://schemas.informatica.com/socrates/data-services/2014/04/avosConnections.xsd"
+                     displayName="kk-salesforce"
+                     label="kk-salesforce"
+                     name="kk-salesforce">
+            <description/>
+            <tags/>
+            <agent/>
+            <attributes>
+               <attribute name="objectFilter" value=""/>
+            </attributes>
+            <soaConnector xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                          connectorPath="project:/com.activevos.cumulus.cloud.extend.playbook.configuration/config/sfConnector.xml"
+                          name="Salesforce"
+                          supportsConnectionTest="true"
+                          supportsOData="true"
+                          supportsPublishSkipMetadataRefresh="true"
+                          uuid="05fc48f1-e6e1-441b-b700-bac396ca2ed1">
+               <description>Salesforce.com SOA based data connector.</description>
+            </soaConnector>
+            <authentication type="$infa_basicform">
+               <attributes>
+                  <attribute encrypted="false" name="username" value="krrish@informatica.com"/>
+                  <attribute encrypted="true" name="password" value=""/>
+                  <attribute encrypted="true" name="token" value=""/>
+                  <attribute encrypted="false"
+                             name="serviceUrl"
+                             value="https://login.salesforce.com/services/Soap/c/56.0"/>
+                  <attribute encrypted="true" name="clientId" value=""/>
+                  <attribute encrypted="true" name="clientSecret" value=""/>
+               </attributes>
+            </authentication>
+         </connection>
+      </types1:Entry>
+      <types1:GUID>9tJtvfERIogkzQwUAF8fa6</types1:GUID>
+      <types1:DisplayName>kk-salesforce</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-10-21T17:38:10.532Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

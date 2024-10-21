@@ -1,0 +1,149 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>YtjCtbdsreK8ZAZ-gt-1945129-2024-10-21T17:26:34.808Z::pd.xml</types1:EntryId>
+      <types1:Name>kk_upgrade_dec_repro</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags>.anonymous</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>SA_USE4_1</types1:CreatedBy>
+      <types1:CreationDate>2024-10-21T17:26:35Z</types1:CreationDate>
+      <types1:ModifiedBy>SA_USE4_1</types1:ModifiedBy>
+      <types1:ModificationDate>2024-10-21T17:27:09Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>SA_USE4_1</types1:PublishedBy>
+      <types1:PublicationDate>2024-10-21T17:27:13Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.kk_upgrade_dec_repro/kk_upgrade_dec_repro.pd.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="4vBUDxegCaRj6tIeUMPVSc"
+                  displayName="kk_upgrade_dec_repro"
+                  name="kk_upgrade_dec_repro"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags>.anonymous</tags>
+            <generator>Informatica Process Designer 11</generator>
+            <output>
+               <field description="" name="outputtest" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <tempFields>
+               <field description="" name="sf_test" type="reference">
+                  <options>
+                     <option name="referenceTo">kk-salesforce:Account</option>
+                     <option name="required">false</option>
+                     <option name="guid">9tJtvfERIogkzQwUAF8fa6</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="none">
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+            </extData>
+            <flow id="a">
+               <start id="b">
+                  <link id="m2jadmr8" targetId="m2jadmr7"/>
+               </start>
+               <container id="m2jadmr7" type="exclusive">
+                  <title>sftest</title>
+                  <flow id="m2jadmrb">
+                     <empty id="m2jadmrq">
+                        <title>Untitled</title>
+                     </empty>
+                     <link id="m2jadmrc" targetId="m2jadmr7" type="containerLink"/>
+                  </flow>
+                  <flow id="m2jadmre">
+                     <link id="m2jadmrf" targetId="m2jadmr7" type="containerLink"/>
+                  </flow>
+                  <flow id="m2jadmxa">
+                     <link id="m2jadmxb" targetId="m2jadmr7" type="containerLink"/>
+                  </flow>
+                  <flow id="m2jadmxc">
+                     <link id="m2jadmxd" targetId="m2jadmr7" type="containerLink"/>
+                  </flow>
+                  <flow id="m2jadmxe">
+                     <link id="m2jadmxf" targetId="m2jadmr7" type="containerLink"/>
+                  </flow>
+                  <flow id="m2jadmxg">
+                     <link id="m2jadmxh" targetId="m2jadmr7" type="containerLink"/>
+                  </flow>
+                  <flow id="m2jadmxi">
+                     <link id="m2jadmxj" targetId="m2jadmr7" type="containerLink"/>
+                  </flow>
+                  <link id="m2jadmra" targetId="m2jadmrb" type="containerLink">
+                     <condition source="formula">
+                        <function name="contains">
+                           <arg name="left">{$temp.sf_test.Name}</arg>
+                           <arg name="right">krishna</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="m2jadmrd" targetId="m2jadmre" type="containerLink">
+                     <condition source="formula">
+                        <function name="contains">
+                           <arg name="left">{$temp.sf_test.Name}</arg>
+                           <arg name="right">Abc</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="m2jadmx5" targetId="m2jadmxa" type="containerLink">
+                     <condition source="formula">
+                        <function name="contains">
+                           <arg name="left">{$temp.sf_test.Name}</arg>
+                           <arg name="right">xyz</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="m2jadmx6" targetId="m2jadmxc" type="containerLink">
+                     <condition source="formula">
+                        <function name="contains">
+                           <arg name="left">{$temp.sf_test.Name}</arg>
+                           <arg name="right">Infa</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="m2jadmx7" targetId="m2jadmxe" type="containerLink">
+                     <condition source="formula">
+                        <function name="contains">
+                           <arg name="left">{$temp.sf_test.Name}</arg>
+                           <arg name="right">comp</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="m2jadmx8" targetId="m2jadmxg" type="containerLink">
+                     <condition source="formula">
+                        <function name="contains">
+                           <arg name="left">{$temp.sf_test.Name}</arg>
+                           <arg name="right">test</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="m2jadmx9" targetId="m2jadmxi" type="containerLink"/>
+                  <link id="m2jadmr9" targetId="c"/>
+               </container>
+               <end id="c"/>
+            </flow>
+         </process>
+      </types1:Entry>
+      <types1:GUID>4vBUDxegCaRj6tIeUMPVSc</types1:GUID>
+      <types1:DisplayName>kk_upgrade_dec_repro</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-10-21T17:38:10.645Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
